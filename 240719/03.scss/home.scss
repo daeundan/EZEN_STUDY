@@ -1,0 +1,67 @@
+/* reset */
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gamja+Flower&display=swap");
+
+/* built-in-function */
+$color: (
+  bg-dark-color: #000,
+  bg-light-color: #fff,
+  bg-gray-color: #808080,
+  accent-color: #dc143c,
+  theme-color: #eb7e00,
+);
+
+$size: 16px;
+
+/* common */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .wrapper_header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .contents_title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      .title {
+        color: map-get($color, theme-color);
+        font: bold $size/1 "arial";
+      }
+      .subtitle {
+        font: nomal $size/1 "arial";
+      }
+    }
+    .divideLine {
+      width: 100%;
+      border-top: 1px solid map-get($color, bg-gray-color);
+      margin: 4px;
+    }
+  }
+  .wrapper_body {
+    width: 100%;
+    height: 270px;
+    font-weight: bold;
+    color: map-get($color, theme-color);
+    .video {
+      width: 100%;
+      height: 240px;
+      background: url("./contents/bg_kakao.jpg") center/cover no-repeat;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
