@@ -1,0 +1,21 @@
+1.앞으로 git-hub에 commit을 할 때에는 무조건 EZEN 수업폴더!!!
+
+2.code로 열기!!!
+
+3.ctrl + ~ : 터미널 열기
+
+4.터미널 모드 변경 : git-bash
+
+5.git init : 로컬 컴퓨터 git 초기화 (*최초에 한 번만)
+
+6.git remote add origin https://github.com/daeundan/EZEN_STUDY.git : 로컬 컴퓨터 & 원겨 저장소 연결 (*최초에 한 번만)
+
+7.git remote -v : 로컬 컴퓨터 & 원격 저장소 연결 확인 (*최초에 한 번만)
+
+8.git add . : 루트 폴더에 있는 데이터를 staging area commit
+
+9.git status : staging area로 commit 할 데이터 목록 확인
+
+10.git commit -m "240719" : commit 메세지 기록
+
+11.git push origin master : 원격 저장소 내 master branch에 commit
