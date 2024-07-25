@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:url("./img/Kurly_Headline_Banner_Image_1800x1200.jpg")no-repeat center/cover;
+    .logo {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #container {
+        width: 500px;
+        height: 360px;
+        background: #ccc;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        h1 {
+            font-size: 25px;
+            color: #FA612F;
+            span {
+                color: #5F0080;
+                font-weight: bold;
+            }
+        }
+        .pic {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin: 30px 0 20px;
+            img {
+                width: 100px;
+                filter: grayscale(1);
+                cursor: pointer;
+                border-radius: 50%;
+                transition: all 0.3s;
+                &.active {
+                    border-radius: 50%;
+                    filter: grayscale(0);
+                }
+            }
+        }
+        .desc {
+            .content {
+                display: none;
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    color: #5F0080;
+                }
+                &.active {
+                    display: block;
+                }
+                h2 {
+                    font-size: 18px;
+                    color:  #FA612F;
+                }
+            }
+        }
+    }
+}
+
+.slide {
+    width: 500px;
+    height: 360px;
+    margin: 10px;
+    background: #5F0080;
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
