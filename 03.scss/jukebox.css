@@ -130,29 +130,29 @@ body {
 .wrapper .wrapper_body .albumTable .albumTable_song .fa-solid:hover {
   color: crimson;
 }
-.wrapper .wrapper_body .albumTable .albumTable_song .fa-solid .fa-brands {
+.wrapper .wrapper_body .albumTable .albumTable_song .fa-brands {
   display: inline-block;
   color: rgb(61, 61, 61);
   font-size: 10px;
   cursor: pointer;
 }
-.wrapper .wrapper_body .albumTable .albumTable_song .fa-solid .fa-brands:hover {
+.wrapper .wrapper_body .albumTable .albumTable_song .fa-brands:hover {
   color: crimson;
 }
-.wrapper .wrapper_body .albumTable .album_artist {
+.wrapper .wrapper_body .album_artist {
   width: 26%;
   text-align: center;
 }
-.wrapper .wrapper_body .albumTable_footer {
+.wrapper .albumTable_footer {
   margin-top: 4px;
   display: flex;
   justify-content: space-between;
 }
-.wrapper .wrapper_body .albumTable_footer .albumTable_footer_center {
+.wrapper .albumTable_footer .albumTable_footer_center {
   color: crimson;
   cursor: pointer;
 }
-.wrapper .wrapper_body .albumTable_footer button {
+.wrapper .albumTable_footer button {
   font-size: 10px;
   background: gray;
   color: #fff;
@@ -161,7 +161,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.wrapper .wrapper_body .albumTable_footer button:hover {
+.wrapper .albumTable_footer button:hover {
   background: #eb7e00;
   color: #fff;
 }

@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "name": "양념 소불고기 1kg(냉장)",
+      "price": "17592",
+      "category": "cold",
+      "img": "./img/kurly-item1.JPG"
+    },
+    {
+      "name": "[샤프란] 아우라 섬유유연제 4종 (택1)",
+      "price": "4560",
+      "category": "daily",
+      "img": "./img/kurly-item5.JPG"
+    },
+    {
+      "name": "[Kurly's] 시그니처 물티슈 (70매 X 10팩)",
+      "price": "18900",
+      "category": "kitchen",
+      "img": "./img/kurly-item4.JPG"
+    },
+    {
+      "name": "[일일특가][LOMA] 너리싱 샴푸 1L 듀오 세트(+쇼핑백증정)",
+      "price": "96600",
+      "category": "health",
+      "img": "./img/kurly-item2.JPG"
+    },
+    {
+      "name": "[Sea to Table] 손질 생새우살 200g (냉동) (26/30 사이즈)",
+      "price": "5900",
+      "category": "frozen",
+      "img": "./img/kurly-item3.JPG"
+    }
+  ]
+}

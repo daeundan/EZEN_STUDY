@@ -147,42 +147,42 @@ body {
           &:hover {
             color: crimson;
           }
-          .fa-brands {
-            display: inline-block;
-            color: rgb(61, 61, 61);
-            font-size: 10px;
-            cursor: pointer;
-            &:hover {
-              color: crimson;
-            }
+        }
+        .fa-brands {
+          display: inline-block;
+          color: rgb(61, 61, 61);
+          font-size: 10px;
+          cursor: pointer;
+          &:hover {
+            color: crimson;
           }
         }
       }
-      .album_artist {
-        width: 26%;
-        text-align: center;
-      }
     }
-    .albumTable_footer {
-      margin-top: 4px;
-      display: flex;
-      justify-content: space-between;
-      .albumTable_footer_center {
-        color: crimson;
-        cursor: pointer;
-      }
-      button {
-        font-size: 10px;
-        background: gray;
+    .album_artist {
+      width: 26%;
+      text-align: center;
+    }
+  }
+  .albumTable_footer {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    .albumTable_footer_center {
+      color: crimson;
+      cursor: pointer;
+    }
+    button {
+      font-size: 10px;
+      background: gray;
+      color: #fff;
+      border: none;
+      padding: 3px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background: $text-color;
         color: #fff;
-        border: none;
-        padding: 3px;
-        border-radius: 5px;
-        cursor: pointer;
-        &:hover {
-          background: $text-color;
-          color: #fff;
-        }
       }
     }
   }

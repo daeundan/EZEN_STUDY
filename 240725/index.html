@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/7a72e4068c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <form action="http://127.0.0.1:51417" method="get">
+        <img
+          src="./img/kurly-removebg-preview.png"
+          alt="kurly-logo"
+          width="100px"
+        />
+        <h1>상품 목록</h1>
+        <div class="search">
+          <input class="searchBar" type="text" name="search" id="search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="sort-buttons">
+          <input class="newlisting" type="button" value="최신순" />
+          <input class="" type="button" value="인기순" />
+          <input class="ascending" type="button" value="낮은 가격순" />
+          <input class="decending" type="button" value="높은 가격순" />
+        </div>
+        <select name="category" id="category">
+          <option selected disabled>카테고리를 선택하세요</option>
+          <option value="frozen">냉동식품</option>
+          <option value="cold">냉장식품</option>
+          <option value="daily">생필품</option>
+          <option value="health">건강식품</option>
+          <option value="kitchen">주방용품</option>
+          <option value="life">생활용품</option>
+        </select>
+      </form>
+      <ul>
+        <!-- <li>
+          <img src="./img/kurly-item1.JPG" alt="cup" />
+          <div>
+            <h3 class="name">양념 소불고기 1kg(냉장)</h3>
+            <span class="price"
+              ><p>20% 할인</p>
+              ￦17,592</span
+            >
+          </div>
+        </li> -->
+      </ul>
+    </main>
+  </body>
+</html>
