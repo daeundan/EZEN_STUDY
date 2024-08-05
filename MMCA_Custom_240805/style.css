@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("./reset.css");
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.inner {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100vh;
+  /* Header */
+  /* Intro */
+}
+.container header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.container header .logo {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+.container header .logo img {
+  width: 60px;
+}
+.container header .banner {
+  background: #000;
+  height: 40px;
+  transition: all 0.5s;
+}
+.container header .banner .lnb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 40px;
+}
+.container header .banner .lnb a {
+  color: #ddd;
+  margin-right: 10px;
+}
+.container header .banner .lnb a em {
+  color: #bbb;
+}
+.container header .gnb_inner {
+  top: 0;
+  width: 100vw;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header .gnb_inner .gnb {
+  display: flex;
+  gap: 40px;
+}
+.container header .gnb_inner .gnb li a {
+  color: #000;
+}
+.container header .gnb_inner .gnb li a:hover {
+  color: crimson;
+}
+.container header nav {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  /* border: 1px solid #f00; */
+}
+.container header .trigger {
+  display: none;
+}
+.container header.active {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.container header.active .gnb li a {
+  color: #000;
+}
+.container header.active .banner {
+  height: 0;
+  overflow: hidden;
+}
+.container header.active nav {
+  padding-bottom: 20px;
+}
+.container .intro {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 20px;
+  background: url("./img/intro.mp4") center/contain no-repeat;
+  border: 1px solid #f00;
+}
+.container .intro .heading {
+  text-align: center;
+  color: #fff;
+}
+.container .intro .heading h1 {
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+.container .intro .heading p {
+  font-size: 22px;
+  line-height: 1.5rem;
+  padding: 0 150px;
+}
+
+/* Museum */
+.museum_content {
+  display: flex;
+  padding: 150px 0;
+}
+.museum_content div {
+  padding: 30px;
+}
+.museum_content div.desc {
+  text-align: center;
+  flex: 3;
+}
+.museum_content div.desc img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.museum_content div.desc span {
+  font-size: 22px;
+  line-height: 1.5rem;
+  padding: 0 150px;
+}/*# sourceMappingURL=style.css.map */

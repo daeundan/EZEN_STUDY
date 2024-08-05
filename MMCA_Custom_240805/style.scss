@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("./reset.css");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.inner {
+  width: 1300px;
+  margin: 0 auto;
+}
+.container {
+  width: 100vh;
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    .logo {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 10px;
+      img {
+        width: 60px;
+      }
+    }
+    .banner {
+      background: #000;
+      height: 40px;
+      transition: all 0.5s;
+      .lnb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 40px;
+        // justify-content: flex-end;
+        a {
+          color: #ddd;
+          margin-right: 10px;
+          em {
+            color: #bbb;
+          }
+        }
+      }
+    }
+    .gnb_inner {
+      top: 0;
+      width: 100vw;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .gnb {
+        display: flex;
+        gap: 40px;
+        li {
+          a {
+            color: #000;
+            &:hover {
+              color: crimson;
+            }
+          }
+        }
+      }
+    }
+    nav {
+      width: 1300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      /* border: 1px solid #f00; */
+      // .logo {
+      //   top: 0;
+      //   img {
+      //     width: 100px;
+      //   }
+      // }
+    }
+    .trigger {
+      display: none;
+    }
+    &.active {
+      background: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      .gnb li a {
+        color: #000;
+      }
+      .banner {
+        height: 0;
+        overflow: hidden;
+      }
+      nav {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  /* Intro */
+  .intro {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 20px;
+    background: url("./img/intro.mp4") center/contain no-repeat;
+    border: 1px solid #f00;
+    // display: flex;
+    // align-items: center;
+    .heading {
+      text-align: center;
+      color: #fff;
+      h1 {
+        font-size: 70px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 22px;
+        line-height: 1.5rem;
+        padding: 0 150px;
+      }
+    }
+  }
+}
+
+/* Museum */
+.museum_content {
+  display: flex;
+  padding: 150px 0;
+  div {
+    padding: 30px;
+    &.desc {
+      text-align: center;
+      flex: 3;
+      img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+      span {
+        font-size: 22px;
+        line-height: 1.5rem;
+        padding: 0 150px;
+      }
+    }
+  }
+}
