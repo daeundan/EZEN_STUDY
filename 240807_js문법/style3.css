@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(./bookstore.jpeg) center/cover no-repeat;
+}
+body #container {
+  width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(102, 54, 13, 0.4);
+}
+body #container .clock_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+body #container .clock_body .clock {
+  width: 100px;
+  height: 100px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  background: rgba(102, 54, 13, 0.4);
+}
+body #container .clock_body .clock .hand {
+  width: 50%;
+  height: 6px;
+  background: #222;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: transform 0.1s ease-in-out;
+}
+body #container .clock_body .clock .hour {
+  height: 8px;
+}
+body #container .clock_body .clock .minute {
+  height: 6px;
+}
+body #container .clock_body .clock .second {
+  height: 4px;
+  background: #fff;
+}
+body #container h1 {
+  margin-bottom: 20px;
+}
+body #container #bookInfo {
+  margin-top: 20px;
+}
+body #container #bookInfo li {
+  font-size: 1rem;
+  line-height: 3;
+}
+body #container #bookInfo li label {
+  display: inline-block;
+  width: 50px;
+}
+body #container #bookInfo li label input[type=text] {
+  width: 450px;
+  padding: 5px;
+}
+body #container .btn {
+  width: 100px;
+  margin: 10px 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  background: rgba(102, 54, 13, 0.4);
+  border: none;
+  border-radius: 10px;
+}
+body #booklist {
+  width: 500px;
+}
+body #booklist li {
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #fff;
+  position: relative;
+}
+body #booklist li span {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #ddd;
+  color: #000;
+  border-radius: 8px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+body #booklist li span:hover {
+  background: crimson;
+  color: #fff;
+}/*# sourceMappingURL=style3.css.map */

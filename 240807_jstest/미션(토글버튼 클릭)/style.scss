@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  background: purple;
+  color: #fff;
+  .toggle_icon {
+    i {
+      position: absolute;
+      font-size: 40px;
+      padding: 20px;
+    }
+  }
+
+  .toggle {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 300px;
+    height: 100vh;
+    display: none; // 초기 상태에서는 숨김
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: purple;
+    .banner {
+      flex-direction: column;
+      .banner_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          font-size: 20px;
+          margin: 40px;
+        }
+      }
+    }
+  }
+  .show {
+    display: flex; // 토글된 상태에서 flex로 보이게 함
+    justify-content: center; // end에서 center로 변경하여 중앙 정렬
+  }
+}
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// body {
+//   display: flex;
+//   align-items: center;
+//   justify-content: end;
+//   .container {
+//     position: relative;
+//     justify-content: center;
+//     width: 100px;
+//     height: 100px;
+//     background: purple;
+//     color: #fff;
+//     .toggle_icon {
+//       i {
+//         position: absolute;
+//         width: 100px;
+//         height: 100px;
+//       }
+//     }
+//     .toggle {
+//       width: 300px;
+//       height: 100vh;
+//       display: none;
+//       align-items: center;
+//       justify-content: center;
+//       flex-direction: column;
+//       .banner {
+//         top: 100px;
+//         flex-direction: column;
+//       }
+//       :active {
+//         display: block;
+//       }
+//     }
+//   }
+// }

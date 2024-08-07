@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script1.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0 auto;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        .container {
+          align-items: center;
+          border: 1px solid rgba(255, 111, 0, 0.3);
+          box-shadow: 0 0 20px 10px rgba(255, 111, 0, 0.3),
+            0 0 40px 30px rgba(255, 111, 0, 0.2);
+          border-radius: 10px;
+          padding: 20px;
+          width: 1200px;
+          .heading {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .desc {
+              width: 70%;
+              p {
+                margin: 20px 0;
+              }
+            }
+          }
+          .orderInfo {
+            min-height: 100vh;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div class="img">
+          <img
+            style="width: 280px"
+            src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/7293b867-7202-4161-83db-76474e93a240/G.T.+HUSTLE+3+FP+EP.png"
+            alt="nike"
+          />
+        </div>
+        <div class="desc">
+          <h1>상품 설명</h1>
+          <h2>상품명 : 나이키 G.T. 허슬 3 블루프린트 EP</h2>
+          <p>농구화</p>
+          <p>229,000원</p>
+          <ul>
+            <li>현재 컬러: 화이트/팬텀/토탈 오렌지/레이서 블루</li>
+            <li>스타일 번호: HJ9084-100</li>
+            <li>제조 국가/지역: 중국</li>
+          </ul>
+          <p>
+            G.T. 허슬 3와 함께라면 긴장이 고조되는 상황에서도 돌파해 나갈 수
+            있습니다. 챔피언급 선수들을 위한 제품과 동일한 스펙으로 제작된 이중
+            에어 줌 쿠셔닝이 강력한 탄성력을 제공합니다.
+          </p>
+          <button id="order">상품 주문하기</button>
+        </div>
+      </div>
+      <div class="orderInfo"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style3.css" />
+    <script defer src="./script3.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="clock_body">
+        <div class="clock">
+          <div class="hand hour" id="hour"></div>
+          <div class="hand minute" id="minute"></div>
+          <div class="hand second" id="second"></div>
+        </div>
+      </div>
+      <h1>🤩 To Do List 🤩</h1>
+      <form action="http://127.0.0.1:5500" method="get">
+        <ul id="bookInfo">
+          <li>
+            <label for="title">날짜</label>
+            <input type="date" id="title" />
+          </li>
+          <li>
+            <label for="author">시간</label>
+            <input type="time" id="author" />
+          </li>
+          <li>
+            <label for="author">할일</label>
+            <input type="text" id="author" />
+          </li>
+        </ul>
+        <input class="btn" type="submit" value="저장하기" />
+        <input class="btn" type="submit" value="취소하기" />
+      </form>
+    </div>
+    <ul id="booklist">
+      <li>날짜 | 시간 | 할일 <span>삭제</span></li>
+    </ul>
+  </body>
+</html>

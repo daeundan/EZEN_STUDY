@@ -1,0 +1,62 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #f00;
+}
+body .container .item {
+  position: absolute;
+}
+body .container .item .img {
+  border: 1px solid #f00;
+}
+body .container .item .img :nth-child(1) {
+  display: block;
+}
+body .container .item .img :nth-child(2) {
+  display: none;
+}
+body .container .item .img :nth-child(3) {
+  display: none;
+}
+body .container .item .img :nth-child(4) {
+  display: none;
+}
+body .container :active {
+  display: block;
+}
+body .container .text {
+  text-align: start;
+  z-index: 1111;
+}
+body .container .text li {
+  color: #fff;
+  font-weight: normal;
+  font-size: 50px;
+}/*# sourceMappingURL=style.css.map */

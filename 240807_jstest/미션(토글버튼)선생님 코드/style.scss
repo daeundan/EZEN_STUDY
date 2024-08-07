@@ -1,0 +1,67 @@
+/* before after 사용하는 것 */
+/* 가상 클라스 부여 &.active 스크립트 통해서 제어하고자 할 때 가상클라스 부여 */
+/* 공간 차지하는 것 position absolute 와 fixed 가 다르다 설명 */
+
+/* variable */
+$item-color: #639;
+$bg-color: #fff;
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* common */
+html {
+  font-size: 16px;
+}
+
+// body {
+//   overflow: hidden;
+// }
+
+button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  border: none;
+  background-color: $item-color;
+  color: $bg-color;
+  // display: none;
+  /* 가상 클래스 부여 */
+  transition: transform 0.3s;
+  &.active {
+    transform: translateX(-110px);
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: $item-color;
+  color: $bg-color;
+  padding: 2rem;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  li {
+    padding: 1rem 0;
+  }
+  &.active {
+    transform: translateX(0);
+  }
+}
