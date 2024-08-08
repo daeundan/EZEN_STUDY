@@ -1,0 +1,52 @@
+20224-08-08
+< 지금까지 한 것>
+
+1. 변수
+2. 자료형
+3. 조건문
+4. 반복문
+5. 함수
+6. DOM
+7. DOM 활용
+8. Event
+9. 객체
+
+
+* 오늘 할 것 9. 객체!
+자바스크립트 코어는 객체에서 판가름 난다.
+
+객체 
+> 내장 객체 : 어딘가에 이미 저장이 되어있음. 세팅 되어있는 객체
+1. 웹 브라우저 2.스크립트 자체
+- 웹 브라우저 80% : Window
+- 객체 안에 퐘된 함수를 "메서드" 라고 함.
+객체 > 함수(*메서드) + 속성
+
+< 꼭 알아야 할 함수(method) >
+- alert() : 알림 메시지를 출력
+- confirm() : 예 혹은 아니오의 답을 선택
+- clearinterval() : setinterval 기능을 reset
+- clearTimeout() : setTimeout 기능을 reset
+- setTimeout() : 일정 지연 시간 이후 액션 실행
+- setinterval() : 일정 시간을 기준으로 반복적인 액션 실행
+- fetch() : json 등 외부 데이터 출력
+- find() : 특정 요소 찾기
+- focus() : form 요소 안 이벤트 부여
+- prompt() : 사용자에게 값 입력 기능 부여
+- open() : 웹 브라우저 내 요소 출력
+- close() : 웹 브라우저 내 요소 닫기
+
+< 꼭 알아야 될 속성(propertey) >
+- innerHight : 개발자 작성 문서에서 출력되는 높이 공간
+- innerWidth : 개발자 작성 문서에서 출력되는 너비 공간
+- outerHeight : 문서 출력되는 공간 밖 즐겨찾기 및 주소창 등 공간 포함한 높이
+- outerWidth : 우측 스크롤 바의 공간까지 포함시킨 너비 공간
+- pageXOffset : 현재 문서 기준 X축으로부터의 값 체크
+- pageYOffset : 현재 문서 기준 Y축으로부터의 값 체크
+- screenX : 사용자의 모니터를 기준으로 X 좌표값
+- screenY : 사용자의 모니터를 기준으로 Y 좌표값
+- scrollX : 현재 문서 상 X축으로 부터 스크롤 진행값 체크
+- scrollY : 현재 문서 상 Y축으로 부터 스크롤 진행값 체크
+- localStorage : 로컬 컴퓨터 임시적 데이터 보관
+- location : 특정 URL 페이지 이동
+- navigator : 현재 접속 로컬 컴퓨터 기본 정보값 확인

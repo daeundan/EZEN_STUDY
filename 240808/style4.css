@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+body h1 {
+  font-size: 28px;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+body .container .name_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .container .name_inner p {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+body .container .name_inner p input[type=text] {
+  width: 256px;
+  padding: 4px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #ddd;
+}
+body .container .name_inner p #subject {
+  margin-bottom: 10px;
+}
+body .container .name_inner input[type=submit] {
+  height: 40px;
+  width: 300px;
+  background: #eee;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .container .name_inner input[type=submit]:hover {
+  background: crimson;
+  color: #fff;
+}
+body table {
+  width: 300px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+body table th,
+body table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  font-weight: normal;
+}
+body table th {
+  background-color: #fff;
+}/*# sourceMappingURL=style4.css.map */
