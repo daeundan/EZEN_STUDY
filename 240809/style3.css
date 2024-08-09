@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common */
+html {
+  font-size: 13px;
+}
+
+/* Variable */
+@font-face {
+  font-family: "YoonChildfundkoreaDaeHan";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaDaeHan.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  background: url(./img/bg06.jpeg) center/cover no-repeat;
+}
+body h1 {
+  font-size: 3.2rem;
+  font-family: "YoonChildfundkoreaDaeHan";
+  color: #fb7dab;
+  margin-bottom: 20px;
+}
+
+/* Analog */
+.clock-container {
+  margin-top: 40px;
+  width: 300px;
+  height: 300px;
+  border: 8px solid #febad3;
+  border-radius: 50%;
+  background: url(./img/bg05.jpeg) center/cover no-repeat;
+  position: relative;
+  font-family: "YoonChildfundkoreaDaeHan";
+}
+.clock-container .number {
+  position: absolute;
+  color: #444;
+  font-size: 2rem;
+}
+.clock-container .number#num3 {
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+.clock-container .number#num6 {
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+.clock-container .number#num9 {
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+.clock-container .number#num12 {
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+.clock-container #dot {
+  width: 14px;
+  height: 14px;
+  background: url(/img/APEACH.png) center/cover no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 2;
+}
+.clock-container #hour {
+  width: 7px;
+  height: 60px;
+  background: #febad3;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  transform: translate(-50%, -50%);
+  transform-origin: center bottom;
+}
+.clock-container #minute {
+  width: 2px;
+  height: 95px;
+  background: #fb7dab;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -95px;
+  transform: translate(-50%, -50%);
+  transform-origin: center bottom;
+}
+.clock-container #second {
+  width: 2px;
+  height: 80px;
+  background: #444;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  transform: translate(-50%, -50%);
+  transform-origin: center bottom;
+}
+
+/* Digital */
+.digital-clock {
+  margin-top: 160px;
+  font-size: 2.5rem;
+  color: #444;
+  font-family: "YoonChildfundkoreaDaeHan";
+}/*# sourceMappingURL=style3.css.map */

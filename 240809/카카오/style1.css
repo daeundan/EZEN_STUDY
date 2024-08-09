@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #feb33a;
+}
+body h2 {
+  font-size: 18px;
+  color: #ddd;
+}
+body .character {
+  width: 100px;
+  height: 100px;
+  background: url(./img/lion.png) center/90% no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=style1.css.map */
