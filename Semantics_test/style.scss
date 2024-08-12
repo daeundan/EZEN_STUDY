@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  header {
+    margin-top: 10px;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background: #fd886a;
+  }
+  nav {
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: #5681dc;
+  }
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    aside {
+      font-size: 2rem;
+      text-align: center;
+      width: 200px;
+      height: 500px;
+      left: 0;
+      background: #a3c94d;
+      margin-right: 10px;
+    }
+    main {
+      font-size: 2rem;
+      text-align: center;
+      width: 1000px;
+      height: 500px;
+      background: #8dd8fc;
+      padding: 10px 50px;
+      article {
+        width: 100%;
+        height: 70%;
+        background: #04adff;
+        border: 10px solid #fff;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+        figure {
+          width: 100%;
+          height: 40%;
+          background: #fccf09;
+          border: 10px solid #fff;
+          margin-bottom: 10px;
+        }
+        p {
+          width: 100%;
+          height: 40%;
+          background: #fde670;
+          border: 10px solid #fff;
+        }
+      }
+      section {
+        width: 100%;
+        height: 100px;
+        background: #297df6;
+        border: 10px solid #fff;
+      }
+    }
+  }
+  footer {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background: green;
+    border-top: 10px solid #fff;
+  }
+}
