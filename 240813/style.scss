@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gaegu&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  height: 100vh;
+  background: url(./img/wrtFileImageView.do) center/cover no-repeat;
+  .container {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      color: #fff;
+    }
+    form {
+      margin: 20px 0;
+      input[type="text"] {
+        font-family: "Bagel Fat One", system-ui;
+        border: none;
+        background: none;
+        border-bottom: 2px solid dodgerblue;
+        padding: 10px;
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type="submit"] {
+        font-family: "Bagel Fat One", system-ui;
+        color: dodgerblue;
+        border: 2px solid dodgerblue;
+        border-radius: 8px;
+        padding: 8px 12px;
+        transition: all 0.3s;
+        &:hover {
+          background: dodgerblue;
+          color: #fff;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px dashed dodgerblue;
+        padding-bottom: 12px;
+        button {
+          font-family: "Bagel Fat One", system-ui;
+          border: 1px solid transparent;
+          border-radius: 8px;
+          padding: 6px 12px;
+          background: dodgerblue;
+          color: #fff;
+          transition: all 0.3s;
+          &:hover {
+            color: #fff;
+            background: crimson;
+            border: 1px solid crimson;
+          }
+        }
+      }
+    }
+  }
+}
