@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poor+Story&display=swap");
+
+@font-face {
+  font-family: "YoonChildfundkoreaMinGuk";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaMinGuk.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(https://blog.kakaocdn.net/dn/eFxmqN/btquZFlxvLG/IKittvt0eFXbhGhj2MuJOK/img.jpg)
+    center/cover no-repeat;
+  .header {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+      font-family: "YoonChildfundkoreaMinGuk";
+      src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaMinGuk.woff2")
+        format("woff2");
+      font-weight: bold;
+      font-style: normal;
+      color: #02358e;
+      margin-bottom: 20px;
+    }
+    main {
+      width: 960px;
+      height: 600px;
+      background: rgba($color: #fff, $alpha: 0.4);
+      font-family: "Ownglyph_kimkonghae";
+      src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/Ownglyph_kimkonghae.woff2")
+        format("woff2");
+      font-weight: normal;
+      font-style: normal;
+      border-radius: 8px;
+      padding: 20px 100px;
+      text-align: center;
+      font-family: "YoonChildfundkoreaMinGuk";
+      src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaMinGuk.woff2")
+        format("woff2");
+      .img {
+        img {
+          width: 50px;
+        }
+      }
+      h1 {
+        margin-bottom: 20px;
+        color: #02358e;
+      }
+      #tweetTextArea {
+        width: 100%;
+        height: 60%;
+        justify-content: 80%;
+        resize: none;
+        border: none;
+        // border-radius: 8px;
+        border-top: 4px solid #2aa9e0;
+        border-bottom: 4px solid #2aa9e0;
+        background: transparent;
+        margin: 10px 0;
+        padding: 10px;
+        padding-left: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "YoonChildfundkoreaMinGuk";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaMinGuk.woff2")
+          format("woff2");
+        transition: all 0.5s;
+        &:focus {
+          outline: none;
+          background: rgba($color: #fff, $alpha: 0.5);
+        }
+      }
+      #tweetButton {
+        margin-top: 30px;
+        background: #2aa9e0;
+        color: #fff;
+        font-size: 22px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-family: "YoonChildfundkoreaMinGuk";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaMinGuk.woff2")
+          format("woff2");
+        transition: background 0.3s color 0.3s;
+        &:hover {
+          background: dodgerblue;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
