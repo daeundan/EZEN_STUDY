@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7a72e4068c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 20px;
+        background: url(https://filestore.community.support.microsoft.com/api/images/32a77112-0ab7-4d78-9a01-a631d2ff7f2e?upload=true&fud_access=wJJIheezUklbAN2ppeDns8cDNpYs3nCYjgitr%2BfFBh2dqlqMuW7np3F6Utp%2FKMltnRRYFtVjOMO5tpbpW9UyRAwvLeec5emAPixgq9ta07Dgnp2aq5eJbnfd%2FU3qhn54o%2BzPGpPorce3QSA2%2BRILEP5OTV9LfFk2wO5vGsEs3RuTNojzg23l4665ObP%2F6eoxQfOsvnuEmxzqcJ4GynqoO1tOegVO%2Fijtfq%2FDhaA02kTKXZ5lvRyX3ghHREOf0K85RErO0JQzGJpnddO8BsEGrK%2BiAHUYGyy78btZx%2Bo2WwndNhjhM%2BOvwKLMeLfy%2F%2BL%2BkE4YaXd3GaxFfEkJjB3R0QX7fmzcNlmkHg1Zj%2BuKbJ5jQDF8bA79dBBuVwjZmYSgpE6HbaL8RI2dzUXGtBmnH69wKSz%2BOgzi9tblkSN1wgM%3D)
+          center/cover no-repeat;
+        .container {
+          display: flex;
+          flex-direction: column;
+          width: 500px;
+          button {
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: dodgerblue;
+            color: #fff;
+            cursor: pointer;
+            i {
+              margin-right: 2px;
+            }
+          }
+          #result {
+            background: #fff;
+            text-align: center;
+            font-size: 12px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button id="getLocation">
+        <i class="fa-solid fa-location-dot"></i>위치 정보 가져오기
+      </button>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

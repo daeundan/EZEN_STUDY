@@ -1,0 +1,12 @@
+
+오늘 할 것들
+
+   API
+  - LocalStorage // Todolist
+  - Geolocation // Weather 
+  - Geolocation // Kakao Map + Public data(*캠핑장)
+  - Canvas API > 그림판 (싹 다 호도법!)
+
+
+
+ 
