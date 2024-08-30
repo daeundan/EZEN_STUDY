@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "240830",
+		"path": ".."
+	},
+	{
+		"name": "04js",
+		"path": "../../../Downloads/04js"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "04js"
+  }
+}
